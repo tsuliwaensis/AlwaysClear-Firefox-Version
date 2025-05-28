@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Clear Downloads",
+  "version": "1.0",
+  "description": "Automatically clears completed downloads after a configurable delay.",
+  "permissions": [
+    "downloads",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": { "48": "icons/icon48.png" },
+    "default_title": "Auto Clear Downloads",
+    "default_popup": "options.html"
+  }
+}

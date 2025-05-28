@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Clear Downloads Options</title>
+  <style>
+    body { font-family: sans-serif; margin: 1em; }
+    label { display: block; margin-bottom: 0.5em; }
+    input { width: 4em; }
+    button { margin-top: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Auto Clear Downloads</h1>
+  <form id="settings-form">
+    <label>
+      Clear delay (seconds):
+      <input type="number" id="delay" min="0" step="1" required>
+    </label>
+    <button type="submit">Save</button>
+    <div id="status"></div>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>
